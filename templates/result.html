@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/survey.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            
+                <table>
+                    <tr>
+                        <td class="col1">Name: </td>
+                        <td>{{request.session.name}}</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Dojo Location: </td>
+                        <td>{{request.session.location}}</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Favorite Language:</td>
+                        <td>{{request.session.language}}</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Comment(optional)</td>
+                        <td>{{request.session.comment}}</td>
+                    </tr>
+              
+                </table>
+                <form action="/" method="POST">
+                    {% csrf_token %}
+                    <input class="button" type="submit" value="GoBack">
+                </form>
+            
+            </form>
+        </div>
+    </div>
+</body>
+</html>

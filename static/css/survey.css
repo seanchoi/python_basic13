@@ -1,0 +1,44 @@
+.container {
+    width:500px;
+    height:400px;
+    margin: 0 auto;
+    border: solid 4px;
+    border-color: black;
+    align-content: center;
+    font-size: 18px;
+}
+
+.formbox {
+    box-sizing: border-box;
+    width:400px;
+    height:500px;
+    padding-left:50px;
+    margin-top:20px;
+    
+}
+
+.col1 {
+    width:200px;
+}
+
+input {
+    width:198px;
+    height:20px;
+}
+
+select {
+    width: 205px;
+    height: 30px;
+}
+
+
+.button {
+    width:100px;
+    height:30px;
+    background-color: aquamarine;
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+}
